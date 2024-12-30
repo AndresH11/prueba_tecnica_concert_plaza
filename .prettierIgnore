@@ -1,0 +1,11 @@
+node_module
+package-lock.json
+package.json
+build
+dist
+.vscode
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+vite.config.json
+public

@@ -1,50 +1,77 @@
-# React + TypeScript + Vite
+# Proyecto: Prueba tecnica concert plaza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Este proyecto está desarrollado en react y utiliza una arquitectura limpia para organizar el código de forma escalable, reutilizable y mantenible.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚨 Recommendations
 
-## Expanding the ESLint configuration
+Se recomienda tener instalada la extensión vsCode llamada <b>Prettier - Code formatter</b>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+De igual forma en el directorio raiz se debe crear una carpeta .vscode y dentro de la carpeta crear una archivo settings.json
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```tree
+├── .vscode/
+|     └── settings.json
+|
+├── src/
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```json
+//settings.json
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "always"
+	}
+}
 ```
+
+## 📂 Directory structure
+
+```tree
+├── src/
+    ├── app/                 #Configuación general de la aplicación
+    |    ├── config/
+    |    ├── slice/
+    |    ├── store/
+    |    ├── constants/
+    |    ├── App.tsx
+    |    ├── main.tsx
+    |    └── router.tx
+    |
+    ├── core/               #Elementos generales y reutilizables
+    |    ├── constants/
+    |    ├── errors/
+    |    ├── store/
+    |    ├── types/
+    |    └── utils/
+    ├── features/           #Cada feature o módulo independiente
+    |    └──featureName/
+    |         ├── components/
+    |         ├── pages/
+    |         ├── hooks/
+    |         ├── services/
+    |         ├── constants/
+    |         └── graphql/
+    |
+    └── shared/              #Componentes y elementos reutilizables entre módulos
+        ├── components/
+        ├── hooks/
+        └── layouts/
+```
+
+## 🐞 Diagrama de flujo
+
+## Instalación
+
+Sigue estos pasos para configurar el proyecto en tu entorno local:
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone [URL del repositorio]
+   ```
+
+   ## 🌱 Creator
+
+   [ Linkedin ] [Andrés Hernández](https://www.linkedin.com/in/andresh11/)

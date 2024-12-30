@@ -1,0 +1,23 @@
+# Bloquear carpetas internas y código fuente
+User-agent: *
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /src/app/
+Disallow: /src/core/
+Disallow: /src/features/
+Disallow: /src/services/
+Disallow: /src/shared/
+
+# Permitir acceso a la carpeta pública
+Allow: /public/
+
+# Bloquear configuración y otros archivos innecesarios
+Disallow: /vite.config.ts
+Disallow: /tailwind.config.js
+Disallow: /postcss.config.js
+Disallow: /tsconfig.json
+Disallow: /tsconfig.app.json
+Disallow: /tsconfig.node.json
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /eslint.config.js

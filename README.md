@@ -1,5 +1,8 @@
 # Proyecto: Prueba tecnica concert plaza
 
+##Sitio web
+<a target="_blank" href="https://prueba-tecnica-concert-plaza.netlify.app/">Demo del proyecto</a>
+
 ## Descripción
 
 Este proyecto está desarrollado en react y utiliza una arquitectura limpia para organizar el código de forma escalable, reutilizable y mantenible.
@@ -67,6 +70,8 @@ De igual forma en el directorio raiz se debe crear una carpeta .vscode y dentro 
 ## Mejoras para continuar
 Si el proyecto se escala y se agregan nuevas features cuyo costo computacional puede ser grande, podría usarse la librería million.js, como una de las opciones para mejorar el rendimiento de la pagina, eso junto con técnicas de optimización
 
+<a target="_blank" href="https://million.dev/">million.dev</a>
+
 ## Instalación
 
 Sigue estos pasos para configurar el proyecto en tu entorno local:
@@ -74,7 +79,7 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 1. Clona este repositorio:
 
    ```bash
-   git clone [URL del repositorio]
+   git clone https://github.com/AndresH11/prueba_tecnica_concert_plaza.git
    ```
 
    ## 🌱 Creator

@@ -61,6 +61,11 @@ De igual forma en el directorio raiz se debe crear una carpeta .vscode y dentro 
 ```
 
 ## 🐞 Diagrama de flujo
+![Diagrama de flujo](https://github.com/user-attachments/assets/8bd11617-81dc-44d2-bbb4-f149f5b95be4)
+
+
+## Mejoras para continuar
+Si el proyecto se escala y se agregan nuevas features cuyo costo computacional puede ser grande, podría usarse la librería million.js, como una de las opciones para mejorar el rendimiento de la pagina, eso junto con técnicas de optimización
 
 ## Instalación
 
